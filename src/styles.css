@@ -56,6 +56,7 @@ p {
 .subtext {
   font-size: 15px;
   font-weight: 300;
+  text-align: left;
 }
 
 .open-area {
@@ -128,17 +129,56 @@ p {
 }
 
 .project-card {
-  width: 300px;
-  height: 500px;
+  display: flex;
   box-shadow: 5px 5px 20px rgb(197, 195, 195);
   margin: 10px;
   background-color: #116466;
   color: #D9B08C;
 }
 
+.left-item {
+  flex: 40%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.right-item {
+  flex: 60%;
+  margin: auto;
+  text-align: center;
+  vertical-align: top;
+  padding: 10px;
+}
+
 .project-container {
-  display: flex;
+  flex: 1fr;
   justify-content: space-around;
+  margin: 5px;
+}
+
+.tech {
+  font-weight: 700;
+}
+
+.pokemon-image {
+  width: 150px;
+  height: 250px;
+}
+
+.weather-image {
+  width: 150px;
+  height: 250px;
+}
+
+.meet-image {
+  width: 300px;
+  height: 250px;
+}
+
+.chat-image {
+  width: 150px;
+  height: 250px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -149,8 +189,9 @@ p {
 }
 
 .project-image {
-  margin-top: 25px;
-  width: 250px;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
   border-radius: 25px;
 }
 
@@ -160,7 +201,7 @@ hr {
 }
 
 .project-link {
-  text-decoration: none;
+  text-decoration: underline;
   color: #ef744b;
 }
 
